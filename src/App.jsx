@@ -10,6 +10,7 @@ import FirstPage from "./pages/FirstPage"
  
  import React, { useState, useEffect } from "react";
 import Loader from "./pages/Loader"
+import { Marquee } from "./components/ui/marquee"
 
  
  
@@ -69,7 +70,21 @@ const App = () => {
       <Work />
       <CarScroll />
 
-      <div className="border-b-[1px] border-zinc-800 relative lg:h-[400px] md:h-[400px] h-[200px] w-full overflow-hidden">
+       <div className="md:h-[200px] sm:h-[150px]  h-[100px] flex w-full bg-black items-center justify-center  opacity-70">
+      <Marquee>
+            <img src="bmwe90.2.jpg" alt="" className="md:w-64 md:h-40 sm:w-52 sm:h-32 w-40 h-24"/> 
+            <img src="merc.jpg" alt="" className="md:w-64 md:h-40 sm:w-52 sm:h-32 w-40 h-24"/>  
+            <img src="/drift/drift1.jpeg" alt="" className="md:w-72 md:h-40 sm:w-56 sm:h-32 w-40 h-24"/> 
+            <img src="/drift/drift2.jpg" alt="" className="md:w-72 md:h-40 sm:w-52 sm:h-32 w-40 h-24"/> 
+            <img src="/drift/drift3.jpeg" alt="" className="md:w-72 md:h-40 sm:w-52 sm:h-32 w-40 h-24"/> 
+            <img src="/drift/drift4.jpeg" alt="" className="md:w-64 md:h-40 sm:w-52 sm:h-32 w-40 h-24"/> 
+            <img src="/drift/drift5.jpg" alt="" className="md:w-72 md:h-40 sm:w-52 sm:h-32 w-40 h-24"/> 
+            <img src="/drift/drift6.jpg" alt="" className="md:w-72 md:h-40 sm:w-56 sm:h-32 w-44 h-24"/> 
+            <img src="/drift/drift7.png" alt="" className="md:w-72 md:h-40 sm:w-56 sm:h-32 w-40 h-24"/> 
+      </Marquee> 
+      </div>
+
+      <div className="border-b-[1px] bg-black border-zinc-800 relative lg:h-[400px] md:h-[400px] h-[200px] w-full overflow-hidden">
         <VideoText src="/carvideo.mp4" className="tracking-tighter">
           DRIFT CARS
         </VideoText>
@@ -80,6 +95,7 @@ const App = () => {
       </div>
 
       <Footer />
+     
     </div>
   );
 };

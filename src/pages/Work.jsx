@@ -1,3 +1,4 @@
+ 
 import React from "react";
 
 const sections = [
@@ -38,11 +39,14 @@ const Work = () => {
 
             {/* Image Section */}
             <div className="flex-1  bg-blue- justify-end flex ">
+           
+
               <img
                 src={section.image}
                 alt={section.title}
                 className=" rounded pointer-events-none select-none "
               />
+           
             </div>
           </div>
         );
