@@ -22,7 +22,7 @@ const items = [
 
 export default function Page() { 
   return (
-    <div className="min-h-fit border-t-[1px] border-zinc-800  sm:flex-row  flex flex-col">
+    <div className="min-h-fit border-t-[1px] border-zinc-800  sm:flex-row  flex flex-col bg-black">
        
 
      
