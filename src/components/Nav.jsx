@@ -113,7 +113,7 @@ const Nav = () => {
 
       {/* Mobile Side Drawer */}
       <div
-        className={`fixed top-0 right-0 h-screen w-1/2 bg-black text-white flex flex-col items-start p-6 gap-6 transition-transform duration-300 z-40 ${
+        className={`fixed top-0 right-0 h-screen w-1/2 bg-black/80 backdrop-blur-2xl text-white flex flex-col items-start p-6 gap-6 transition-transform duration-300 z-40 ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
         onClick={(e) => e.stopPropagation()}

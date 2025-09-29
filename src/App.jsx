@@ -80,7 +80,7 @@ const App = () => {
             <img src="/drift/drift4.jpeg" alt="" className="md:w-64 md:h-40 sm:w-52 sm:h-32 w-40 h-24"/> 
             <img src="/drift/drift5.jpg" alt="" className="md:w-72 md:h-40 sm:w-52 sm:h-32 w-40 h-24"/> 
             <img src="/drift/drift6.jpg" alt="" className="md:w-72 md:h-40 sm:w-56 sm:h-32 w-44 h-24"/> 
-            <img src="/drift/drift7.png" alt="" className="md:w-72 md:h-40 sm:w-56 sm:h-32 w-40 h-24"/> 
+            <img src="/drift/drift7.png" alt="" className="md:w-72 md:h-40 sm:w-56 sm:h-32 w-44 h-24"/> 
       </Marquee> 
       </div>
 
