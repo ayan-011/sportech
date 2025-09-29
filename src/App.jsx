@@ -1,7 +1,7 @@
 import Nav from "./components/Nav"  
 import Tagline from "./pages/tagline"
 import Work from "./pages/Work"
-import Owner from "./pages/owner"
+import Owner from "./pages/owner.jsx"
 import CarScroll from "./pages/CarsSroll"   
 import { VideoText } from "./components/ui/video-text"  
 import ContactUs from "./pages/Contact"  
