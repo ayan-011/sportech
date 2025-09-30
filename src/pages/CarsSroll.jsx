@@ -20,11 +20,11 @@ const sections = [
 
 const CarScroll = () => {
   return (
-    <>
+    <div className="bg-black">
     
- <div className="work underline text-zinc-500  lg:px-28 md:px-5 px-2 mb-3 text-lg font-semibold mt-5  ">Customs</div>
+ <div className="work underline text-zinc-500  lg:px-28 md:px-5 px-2 mb-3 text-lg font-semibold py-5  bg-black">Customs</div>
     
-    <div className="w-full flex flex-col items-center justify-between gap-20  py-12">
+    <div className="w-full flex flex-col items-center justify-between gap-20  py-12 bg-black">
       {sections.map((section, index) => {
         const isReversed = index % 2 !== 0; // reverse layout for even sections
         return (
@@ -43,7 +43,7 @@ const CarScroll = () => {
             </div>
 
             {/* Image Section */}
-            <div className="flex-1  bg-blue- justify-end flex ">
+            <div className="flex-1   justify-end flex ">
               <img
                 src={section.image}
                 alt={section.title}
@@ -55,7 +55,7 @@ const CarScroll = () => {
          
 
           <div
-        className="lg:h-[60vh] md:h-[20vh] h-[30vh] object-cover  flex items-center w-full justify-center text-white text-4xl font-bold opacity-30"
+        className="lg:h-[60vh] md:h-[20vh] h-[30vh] object-cover  flex items-center w-full justify-center text-white text-4xl font-bold opacity-30 "
         style={{
           backgroundImage: `url(${section.backgroundImage})`,
           backgroundSize: "cover",
@@ -71,7 +71,7 @@ const CarScroll = () => {
       })}
     </div>
 
-    </>
+    </div>
   );
 };
 

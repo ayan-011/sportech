@@ -25,8 +25,8 @@ export default function Page() {
     <div className="min-h-fit border-t-[1px] border-zinc-800  sm:flex-row  flex flex-col bg-black">
        
 
-     
- <div className="sm:w-1/2 w-full flex flex-col">
+     {/* Details */}
+ <div className="sm:w-1/2 w-full flex flex-col bg-red-">
       <div className="py-10 flex items-center justify-center   ">
        <img src="/Loading.gif" alt="" className='w-32' />
       </div> 
@@ -38,6 +38,7 @@ export default function Page() {
           className=""
         />
       </div> 
+      <div className="detail w-full flex items-center justify-center py-3 text-zinc-400 text-[12px]">Ph: +1 234 567 890</div>
 
       <div className="flex md:hidden p-3 bg-red-  items-center justify-center">
         <div className="containr flex gap-5 rounded-lg border-[1px] border-zomc-200 text-zinc-200 p-1">
@@ -48,7 +49,9 @@ export default function Page() {
       </div>
  
  </div>
+  
 
+  {/* map  */}
  <div className="sm:w-1/2 flex py-10 justify-center  lg:px-20 md:px-10 sm:px-7 px-2 flex-col ">
 
   

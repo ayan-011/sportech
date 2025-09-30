@@ -2,7 +2,7 @@ import React from 'react'
 
 const Owner = () => {
   return (
-    <div className=' w-full md:py-32 lg:py-20 py-10 flex justify-center  '>
+    <div className=' w-full md:py-32 lg:py-20 py-10 flex justify-center  bg-black'>
         <div className="w-full lg:px-20   md:flex hidden justify-between border-b-[1px] border-zinc-900">
          <div className="w-1/2 bg-red-90 lg:p-9 md:p-6 justify-center lg:gap-5 md:gap-6 flex flex-col text-white">
 
@@ -18,7 +18,7 @@ const Owner = () => {
     rel="noopener noreferrer"
     className='  w-fit'
   >
-           <button className='text-whitehover:text-black hover:bg-white transition-all duration-50 rounded  lg:w-52 md:w-44 p-3 font-semibold border border-white cursor-pointer'>Watch video</button>
+           <button className='text-whitehover:text-black hover:bg-zinc-100 hover:text-black transition-all duration-50 rounded  lg:w-52 md:w-44 p-3 font-semibold border border-white cursor-pointer'>Watch video</button>
            </a>
          </div> 
          <div className="w-1/2 bg- p-6 flex items-center justify-center">

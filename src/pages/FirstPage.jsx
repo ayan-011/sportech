@@ -19,7 +19,7 @@ const FirstPage = () => {
           
                    
                    
-          <img src="img1.png" alt="" className="w-full opacity-30  pointer-events-none" />
+          <img src="img1.png" alt="" className="w-full opacity-40  pointer-events-none" />
         </div>
     </section>
   )

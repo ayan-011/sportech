@@ -60,9 +60,9 @@ const App = () => {
   if (loading) return <Loader />; // Show loader until all assets are loaded
 
   return (
-    <div className="h-[400px] w-full bg-black">
+    <div className="h-[400px] w-full bg-black  ">
       <Nav />
-      <div className="gap md:h-12 h-20"></div>
+      <div className="gap md:h-12 h-20 bg-black"></div>
 
       <FirstPage />
       <Tagline />
@@ -71,7 +71,7 @@ const App = () => {
       <CarScroll />
 
        <div className="md:h-[200px] sm:h-[150px]  h-[100px] flex w-full bg-black items-center justify-center  opacity-70">
-      <Marquee>
+      <Marquee className="bg-black">
             <img src="bmwe90.2.jpg" alt="" className="md:w-64 md:h-40 sm:w-52 sm:h-32 w-40 h-24"/> 
             <img src="merc.jpg" alt="" className="md:w-64 md:h-40 sm:w-52 sm:h-32 w-40 h-24"/>  
             <img src="/drift/drift1.jpeg" alt="" className="md:w-72 md:h-40 sm:w-56 sm:h-32 w-40 h-24"/> 

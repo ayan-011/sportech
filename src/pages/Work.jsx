@@ -17,8 +17,8 @@ const sections = [
 
 const Work = () => {
   return (
-    <section  >
-    <section id='work' className="work underline text-zinc-500  lg:px-32 md:px-5 px-2 mb-3 text-lg font-semibold">Work</section>
+    <section className="bg-black" >
+    <section id='work' className="work underline text-zinc-500  lg:px-32 md:px-5 px-2 mb-3 text-lg font-semibold bg-">Work</section>
     <div className="w-full flex flex-col items-center justify-between gap-20 lg:px-28  md:py-12 border-b-[1px] border-zinc-800  ">
       {sections.map((section, index) => {
         const isReversed = index % 2 !== 0; // reverse layout for even sections
