@@ -47,6 +47,13 @@ const Owner = () => {
           </div>
 
           <p className='text-[9px]  '>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet alias, natus, assumenda laborum minima sint nihil quibusdam, consequatur possimus culpa ex quam soluta dolor fugiat labore totam harum a! Corporis tempora officiis dolorem, dicta eligendi saepe sunt quam quibusdam beatae rerum? Dolore est natus officia, illum sunt rerum suscipit nam.</p>
+           <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.instagram.com/naughty_nagata/" className=' text-zinc-300 text-[12px] hover:underline  flex gap-1 items-center w-fit'>
+            <svg   xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg>
+            <span className='text-blue-400'>Instagram</span> 
+          </a>
         </div>
 
         <img src="harsh.png" alt="" />
