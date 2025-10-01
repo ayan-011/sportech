@@ -1,6 +1,6 @@
 
-import { FloatingDock } from '@/components/ui/floating-dock';
-import { IconHome, IconUser, IconSettings } from "@tabler/icons-react";
+import { FloatingDock } from '@/components/ui/floating-dock'; 
+import { Link } from 'react-router-dom';
 
 const items = [
   {
@@ -63,9 +63,13 @@ export default function Page() {
           />
         </div>
         <div className="detail w-full flex items-center justify-center py-3 text-zinc-400 text-[12px]">Ph: +1 234 567 890</div>
+          
+          <Link to="/admin">Heloo</Link>
 
 
         {/* for mobile  */}
+
+
         <div className="flex md:hidden p-3 bg-red- items-center justify-center">
           <div className="containr flex gap-5 rounded-lg border-[1px] border-zomc-200 text-zinc-200 p-1">
             <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg></a>
@@ -95,6 +99,11 @@ export default function Page() {
         </div>
       </div>
       {/* 👇 Dock is just a normal component inside the scrollable flow */}
+
+
+      {/* admin */}
+
+     
 
 
     </div>
