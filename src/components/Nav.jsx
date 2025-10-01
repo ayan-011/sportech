@@ -52,9 +52,8 @@ const Nav = () => {
     <>
       {/* Navbar */}
       <div
-        className={`navbar fixed top-0 left-0 w-full flex items-center justify-between bg-black/60 backdrop-blur-2xl text-white border-b-[1px] border-zinc-900 shadow-md transition-transform duration-300 p-1 md:px-6 z-50 select-none ${
-          showNavbar ? "translate-y-0" : "-translate-y-full"
-        }`}
+        className={`navbar fixed top-0 left-0 w-full flex items-center justify-between bg-black/60 backdrop-blur-2xl text-white border-b-[1px] border-zinc-900 shadow-md transition-transform duration-300 p-1 md:px-6 z-50 select-none ${showNavbar ? "translate-y-0" : "-translate-y-full"
+          }`}
       >
         {/* Logo */}
         <div className="logo">
@@ -71,27 +70,43 @@ const Nav = () => {
             {["home", "about", "work", "contact"].map((item) => (
               <li
                 key={item}
-                className={`cursor-pointer transition-all ${
-                  activeSection === item
+                className={`cursor-pointer transition-all ${activeSection === item
                     ? "border-b-2 border-white"
                     : "hover:border-b-2 hover:border-gray-400"
-                }`}
+                  }`}
                 onClick={() => handleScrollTo(item)}
               >
                 {item.charAt(0).toUpperCase() + item.slice(1)}
               </li>
             ))}
           </ul>
-          <img
-            src="whattsapp.png"
-            alt="whatsapp"
-            className="md:w-14 md:h-14 h-9 w-9 cursor-pointer"
-          />
+
+          <a
+             href="https://wa.me/919899729915" 
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <img
+              src="whattsapp.png"
+              alt="whatsapp"
+              className="md:w-14 md:h-14 h-9 w-9 cursor-pointer"
+            />
+
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
         <div className="phone flex items-center px-1 gap-3 md:hidden cursor-pointer">
-          <img src="whattsapp.png" alt="whatsapp" className="h-9 w-9" />
+          <a
+             href="https://wa.me/919899729915" 
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <img src="whattsapp.png" alt="whatsapp" className="h-9 w-9" />
+
+          </a>
           <div
             className="menu flex flex-col gap-1"
             onClick={() => setMenuOpen(true)}
@@ -113,9 +128,8 @@ const Nav = () => {
 
       {/* Mobile Side Drawer */}
       <div
-        className={`fixed top-0 right-0 h-screen w-1/2 bg-black/80 backdrop-blur-2xl text-white flex flex-col items-start p-6 gap-6 transition-transform duration-300 z-40 ${
-          menuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+        className={`fixed top-0 right-0 h-screen w-1/2 bg-black/80 backdrop-blur-2xl text-white flex flex-col items-start p-6 gap-6 transition-transform duration-300 z-40 ${menuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close button */}
@@ -131,11 +145,10 @@ const Nav = () => {
           {["home", "about", "work", "contact"].map((item) => (
             <li
               key={item}
-              className={`cursor-pointer transition-all ${
-                activeSection === item
+              className={`cursor-pointer transition-all ${activeSection === item
                   ? "border-b-2 border-white"
                   : "hover:border-b-2 hover:border-gray-400"
-              }`}
+                }`}
               onClick={() => handleScrollTo(item)}
             >
               {item.charAt(0).toUpperCase() + item.slice(1)}

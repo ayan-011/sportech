@@ -3,13 +3,13 @@ import React from "react";
 
 const sections = [
   {
-    title: "Engine Repair",
-    description: "We provide complete engine diagnostics and repair services.",
+    title: "BMW E90 325i",
+    description: "A custom Stage 2 tune dialed in for precision power delivery to keep it sideways and do some static burnouts all day long!",
     image: "/bmwe90.2.jpg",
   },
   {
-    title: "Car Painting",
-    description: "Get your car a fresh look with our premium painting service.",
+    title: "Mercedes C200",
+    description: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius porro adipisci aperiam saepe sint neque accusantium, quidem odit laudantium at!",
     image: "/merc.jpg",
   },
   
@@ -18,6 +18,7 @@ const sections = [
 const Work = () => {
   return (
     <section className="bg-black" >
+     
     <section id='work' className="work underline text-zinc-500  lg:px-32 md:px-5 px-2 mb-3 text-lg font-semibold bg-">Work</section>
     <div className="w-full flex flex-col items-center justify-between gap-20 lg:px-28  md:py-12 border-b-[1px] border-zinc-800  ">
       {sections.map((section, index) => {
