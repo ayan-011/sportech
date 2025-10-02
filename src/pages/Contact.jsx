@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { API_BASE_URL } from "../config";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -39,7 +40,7 @@ const ContactUs = () => {
   };
 
   // handle submit
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const validationErrors = validate();
     if (Object.keys(validationErrors).length > 0) {
@@ -48,18 +49,23 @@ const ContactUs = () => {
       return;
     }
 
-    const existingData = JSON.parse(localStorage.getItem("contactData")) || [];
-    const updatedData = [...existingData, formData];
-    localStorage.setItem("contactData", JSON.stringify(updatedData));
-
-    setFormData({ name: "", email: "", phone: "", comment: "" });
-    setErrors({});
-    setSuccessMsg("✅ Your message has been sent successfully!");
-
-    // remove success message after 3 seconds
-    setTimeout(() => {
+    try {
+      const res = await fetch(`${API_BASE_URL}/api/contact`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      if (!res.ok) {
+        throw new Error("Failed to submit contact");
+      }
+      setFormData({ name: "", email: "", phone: "", comment: "" });
+      setErrors({});
+      setSuccessMsg("✅ Your message has been sent successfully!");
+      setTimeout(() => setSuccessMsg(""), 3000);
+    } catch (err) {
       setSuccessMsg("");
-    }, 3000);
+      setErrors({ submit: "Failed to send. Please try again later." });
+    }
   };
 
   return (
@@ -114,7 +120,7 @@ const ContactUs = () => {
             onChange={handleChange}
             className="w-full rounded-md border border-gray-500 bg-transparent px-4 py-3 text-white focus:outline-none focus:border-white"
           />
-          {errors.phone && (
+            {errors.phone && (
             <p className="text-red-400 text-sm mt-1">{errors.phone}</p>
           )}
         </div>
@@ -129,8 +135,9 @@ const ContactUs = () => {
           className="w-full rounded-md border border-gray-500 bg-transparent px-4 py-3 text-white focus:outline-none focus:border-white"
         ></textarea>
 
-        {/* Success Message */}
+        {/* Success / Error Message */}
         {successMsg && <p className="text-green-400">{successMsg}</p>}
+        {errors.submit && <p className="text-red-400">{errors.submit}</p>}
 
         {/* Button */}
         <button

@@ -70,7 +70,7 @@ const App = () => {
       <Work />
       <CarScroll />
 
-       <div className="md:h-[200px] sm:h-[150px]  h-[100px] flex w-full bg-black items-center justify-center  opacity-70">
+       <div className="md:h-[200px] sm:h-[150px]  h-[100px] flex w-full bg-black items-center justify-center  opacity-70 pointer-events-none select-none">
       <Marquee className="bg-black">
             <img src="bmwe90.2.jpg" alt="" className="md:w-64 md:h-40 sm:w-52 sm:h-32 w-40 h-24"/> 
             <img src="merc.jpg" alt="" className="md:w-64 md:h-40 sm:w-52 sm:h-32 w-40 h-24"/>  

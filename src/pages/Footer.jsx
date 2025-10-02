@@ -51,7 +51,7 @@ export default function Page() {
 
       {/* Details */}
       <div className="sm:w-1/2 w-full flex flex-col bg-red-">
-        <div className="py-10 flex items-center justify-center   ">
+        <div className="py-10 flex items-center justify-center  pointer-events-none select-none">
           <img src="/Loading.gif" alt="" className='w-32' />
         </div>
         <div className=" md:flex hidden bg-red-9   ">
